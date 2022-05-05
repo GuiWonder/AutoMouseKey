@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
@@ -254,7 +254,7 @@ namespace AutoMouseKey
             else if (mkinfo[0] == "连续键盘")
             {
                 Event.CloseCapslk();
-                string text = mkinfo[2].Replace("\r\n", "回").Replace("\n", "回").Replace("\r", "回");
+                string text = mkinfo[3].Replace("\r\n", "回").Replace("\n", "回").Replace("\r", "回");
                 char[] ch = text.ToArray();
                 foreach (char item in ch)
                 {
